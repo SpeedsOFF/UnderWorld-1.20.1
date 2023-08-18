@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "underworld",
+	"version": "${version}",
+	"name": "UnderWorld",
+	"description": "Adds a new dimension under bedrock :)",
+	"authors": [
+		"SpeedsOFF"
+	],
+	"contact": {
+		"main tiktok": "https://www.tiktok.com/@speeds.off",
+		"gd tiktok": "https://www.tiktok.com/@speedsoff.gd"
+	},
+	"license": "MIT",
+	"icon": "assets/underworld/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "me.speeds.underworld.UnderWorldMod"
+		],
+		"client": [
+			"me.speeds.underworld.UnderWorldModClient"
+		],
+		"fabric-datagen": [
+			"me.speeds.underworld.UnderWorldModDataGenerator"
+		]
+	},
+	"mixins": [
+		"underworld.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
